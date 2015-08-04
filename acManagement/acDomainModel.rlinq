@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="acDbContext" namespace="acManagement" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="acDbContext" backend="mssql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="acManagement" default="true">
+      <orm:class name="LbcExpectation" uniqueId="202c79d4-b61b-4b6d-ba43-75a21387859b">
+        <orm:table name="lbcExpectations" />
+        <orm:identity>
+          <orm:single-field field-name="_seNumber" />
+        </orm:identity>
+        <orm:field name="_source" property="Source" uniqueId="f10dc323-1e58-41b1-9d13-45570a84b6c1" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="source" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_gradeCode" property="Grade_code" uniqueId="73e80ee0-12a4-4b97-aeaa-e3ba9d935b33" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="grade_code" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_area" property="Area" uniqueId="6c7ee342-cd15-410b-a5b3-aee2d3fadfa4" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="area" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_course" property="Course" uniqueId="7c950068-2242-453f-b0c5-db08e4496231" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="course" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_version" property="Version" uniqueId="4e9734dc-61e7-43ad-bd86-8bcbbb9da1da" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="version" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_reference" property="Reference" uniqueId="b47913a4-f185-45c1-a567-57c0aed3f083" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="reference" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_seNumber" property="Se_number" uniqueId="f3e810a1-185d-4cd5-aaa8-b098ad3678cf" type="System.String">
+          <orm:column name="se_number" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_contentArea" property="Content_area" uniqueId="e5e28489-ae38-4a16-aa79-e0af945db5b1" type="System.String">
+          <orm:column name="content_area" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_grade" property="Grade" uniqueId="3b8e69d5-a0b8-43ba-8d24-58ddfab21cb0" type="System.String">
+          <orm:column name="grade" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_code" property="Code" uniqueId="0effa937-8ff1-48b2-9829-8fdad05b872b" type="System.String">
+          <orm:column name="code" sql-type="varchar" nullable="true" length="255" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_contentStandard" property="Content_standard" uniqueId="5aaebfe6-ae00-4376-adbc-649dddc23793" type="System.String">
+          <orm:column name="content_standard" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_goals" property="Goals" uniqueId="3f3f342e-8a3c-4ccc-9060-b9baec4bc3ad" type="System.String">
+          <orm:column name="goals" sql-type="varchar" nullable="true" length="255" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_dok" property="Dok" uniqueId="9c4a20c4-37ce-4960-afbb-8ca6b1f2f128" type="System.String">
+          <orm:column name="dok" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_seDescription" property="Se_description" uniqueId="c06e1332-c453-427d-8ee6-15dbbbd63fb8" type="System.String">
+          <orm:column name="se_description" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_dateModified" property="Date_modified" uniqueId="c9dd7e88-f8fb-4ffa-a012-643e04cb25cd" type="System.String">
+          <orm:column name="date_modified" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_dateAdded" property="Date_added" uniqueId="320f6d02-a8f4-4255-ac5f-9c34b2c92c42" type="System.String">
+          <orm:column name="date_added" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_concept" property="Concept" uniqueId="bd7de5ec-dd7c-40d4-b1b2-7d526caa863c" type="System.String">
+          <orm:column name="concept" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_bigIdea" property="Big_idea" uniqueId="a7ffa565-614d-47a8-abf4-4512bf357f41" type="System.String">
+          <orm:column name="big_idea" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_courseMeta" property="Course_meta" uniqueId="e041f657-1dae-4df6-bf7a-15ad3501478f" type="System.String">
+          <orm:column name="course_meta" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_sourceMeta" property="Source_meta" uniqueId="0ac36b07-7817-4944-bde9-36c12879db69" type="System.String">
+          <orm:column name="source_meta" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_isCritical" property="IsCritical" uniqueId="44efc82f-f38f-47b0-887b-fec6369453fc" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="isCritical" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="LbcExpectationIndex" uniqueId="07599f5b-70a4-4b56-ac34-a914b8e3c9d3">
+        <orm:table name="lbcExpectationIndex" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_source" />
+            <orm:single-field field-name="_grade" />
+            <orm:single-field field-name="_area" />
+            <orm:single-field field-name="_course" />
+            <orm:single-field field-name="_version" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:field name="_source" property="Source" uniqueId="8d2dbaed-a85c-4311-bf06-a69c0eae17c8" type="System.Int32">
+          <orm:column name="source" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_grade" property="Grade" uniqueId="a09a6e81-6354-4b25-84d9-2346a2b50298" type="System.Int32">
+          <orm:column name="grade" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_area" property="Area" uniqueId="08367572-5a79-4be5-94d1-2bcf1e74a787" type="System.Int32">
+          <orm:column name="area" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_course" property="Course" uniqueId="456e9a2c-04a5-43be-9af7-32ada8e2929e" type="System.Int32">
+          <orm:column name="course" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_version" property="Version" uniqueId="7e78909a-52a1-45b1-9baa-2a922a0de73f" type="System.Int32">
+          <orm:column name="version" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_txtSource" property="Txt_source" uniqueId="da34f624-f783-445b-845a-862e369f730c" type="System.String">
+          <orm:column name="txt_source" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_txtGrade" property="Txt_grade" uniqueId="85ca9d00-b513-4c6f-8927-d900614a8a70" type="System.String">
+          <orm:column name="txt_grade" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_txtArea" property="Txt_area" uniqueId="4b7cdf40-e5b0-4c14-a040-6d2bede335ed" type="System.String">
+          <orm:column name="txt_area" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_txtCourse" property="Txt_course" uniqueId="4893f1d5-6ca4-430f-8d75-45fb4d2b7ce5" type="System.String">
+          <orm:column name="txt_course" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_count" property="Count" uniqueId="15e07d33-3648-4cee-80bc-7804911598f5" type="System.Int32">
+          <orm:column name="count" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_type" property="Type" uniqueId="64705b3a-699f-4a47-b38a-0d4ce4971725" type="System.String">
+          <orm:column name="type" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_revised" property="Revised" uniqueId="e889fd5d-f1de-4279-960a-8e3f322575e3" type="System.String">
+          <orm:column name="revised" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_codeStart" property="CodeStart" uniqueId="e09bd1a8-a722-497d-993a-fc0d5e04c183" type="System.String">
+          <orm:column name="codeStart" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_codeEnd" property="CodeEnd" uniqueId="147d743e-12c2-4e95-a87f-223d5e59e18c" type="System.String">
+          <orm:column name="codeEnd" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_description" property="Description" uniqueId="2b204c75-e25a-4703-a6a1-320a21fbcce9" type="System.String">
+          <orm:column name="description" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_dateAdded" property="Date_added" uniqueId="33ac958f-bdca-43c3-a7b7-c64ee8ea0300" type="System.String">
+          <orm:column name="date_added" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_dateModified" property="Date_modified" uniqueId="7fb90212-62e9-4f2d-b02e-dd5b76e1a3ec" type="System.String">
+          <orm:column name="date_modified" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="LbcDistrict" uniqueId="9e419154-2546-449a-b48b-66905ac69538">
+        <orm:table name="lbcDistrict" />
+        <orm:identity>
+          <orm:single-field field-name="_districtCode" />
+        </orm:identity>
+        <orm:field name="_districtCode" property="DistrictCode" uniqueId="2c67b6d6-8aea-4b5b-b21c-3ed92245efb1" type="System.String">
+          <orm:column name="DistrictCode" sql-type="nvarchar" nullable="false" length="7" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_districtName" property="DistrictName" uniqueId="ab194d75-980a-4835-956e-fbdeea669ea1" type="System.String">
+          <orm:column name="DistrictName" sql-type="nvarchar" nullable="true" length="100" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_connectionString" property="ConnectionString" uniqueId="3ba58496-c118-44b2-80c4-50ccca6dc35a" type="System.String">
+          <orm:column name="ConnectionString" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_isActive" property="IsActive" uniqueId="984f61f7-7413-45d8-aa69-e890449282bb" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsActive" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_ftpServer" property="FtpServer" uniqueId="1328b684-8bc8-446d-ab2a-706b01ce41da" type="System.String">
+          <orm:column name="FtpServer" sql-type="nvarchar" nullable="true" length="100" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_ftpUser" property="FtpUser" uniqueId="95a89c78-3c04-4d06-aec6-ed415b7b4c9d" type="System.String">
+          <orm:column name="FtpUser" sql-type="nvarchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_ftpPass" property="FtpPass" uniqueId="2dcb8618-523f-42f5-b1af-389c92154552" type="System.String">
+          <orm:column name="FtpPass" sql-type="nvarchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="lbcExpectations">
+        <orm:column name="source" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="grade_code" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="area" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="course" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="version" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="reference" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="se_number" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="content_area" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="grade" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="Varchar" />
+        <orm:column name="code" sql-type="varchar" nullable="true" length="255" scale="0" ado-type="Varchar" />
+        <orm:column name="content_standard" sql-type="varchar" nullable="false" length="10" scale="0" ado-type="Varchar" />
+        <orm:column name="goals" sql-type="varchar" nullable="true" length="255" scale="0" ado-type="Varchar" />
+        <orm:column name="dok" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="se_description" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="date_modified" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="date_added" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="concept" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="big_idea" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="course_meta" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="source_meta" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="isCritical" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+      </orm:table>
+      <orm:table name="lbcExpectationIndex">
+        <orm:column name="source" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="grade" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="area" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="course" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="version" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="txt_source" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="txt_grade" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="txt_area" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="txt_course" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="count" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="type" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="revised" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="codeStart" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="codeEnd" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="description" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="date_added" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="date_modified" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+      </orm:table>
+      <orm:table name="lbcDistrict">
+        <orm:column name="DistrictCode" sql-type="nvarchar" nullable="false" length="7" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="DistrictName" sql-type="nvarchar" nullable="true" length="100" scale="0" ado-type="Varchar" />
+        <orm:column name="ConnectionString" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="IsActive" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="FtpServer" sql-type="nvarchar" nullable="true" length="100" scale="0" ado-type="Varchar" />
+        <orm:column name="FtpUser" sql-type="nvarchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="FtpPass" sql-type="nvarchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+    </orm:schema>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>AC_ManagementConnection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>Data Source=204.51.98.176;Initial Catalog=AC_Management;Persist Security Info=True;User ID=sa;Password=LbWv09</AppConfigConnectionString>
+    <InitialCatalog>AC_Management</InitialCatalog>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings />
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>mssql</Backend>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="202c79d4-b61b-4b6d-ba43-75a21387859b" name="LbcExpectation" namespace="acManagement" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="f10dc323-1e58-41b1-9d13-45570a84b6c1" name="Source" type="Int16" label="Source : Int16" nullable="true" kind="Persistent" fieldName="_source" />
+      <Property Id="73e80ee0-12a4-4b97-aeaa-e3ba9d935b33" name="Grade_code" type="Int16" label="Grade_code : Int16" nullable="true" kind="Persistent" fieldName="_gradeCode" />
+      <Property Id="6c7ee342-cd15-410b-a5b3-aee2d3fadfa4" name="Area" type="Int16" label="Area : Int16" nullable="true" kind="Persistent" fieldName="_area" />
+      <Property Id="7c950068-2242-453f-b0c5-db08e4496231" name="Course" type="Int16" label="Course : Int16" nullable="true" kind="Persistent" fieldName="_course" />
+      <Property Id="4e9734dc-61e7-43ad-bd86-8bcbbb9da1da" name="Version" type="Int16" label="Version : Int16" nullable="true" kind="Persistent" fieldName="_version" />
+      <Property Id="b47913a4-f185-45c1-a567-57c0aed3f083" name="Reference" type="Int16" label="Reference : Int16" nullable="true" kind="Persistent" fieldName="_reference" />
+      <Property Id="f3e810a1-185d-4cd5-aaa8-b098ad3678cf" name="Se_number" label="Se_number : String" kind="Persistent" identity="true" fieldName="_seNumber" />
+      <Property Id="e5e28489-ae38-4a16-aa79-e0af945db5b1" name="Content_area" label="Content_area : String" kind="Persistent" fieldName="_contentArea" />
+      <Property Id="3b8e69d5-a0b8-43ba-8d24-58ddfab21cb0" name="Grade" label="Grade : String" kind="Persistent" fieldName="_grade" />
+      <Property Id="0effa937-8ff1-48b2-9829-8fdad05b872b" name="Code" label="Code : String" kind="Persistent" fieldName="_code" />
+      <Property Id="5aaebfe6-ae00-4376-adbc-649dddc23793" name="Content_standard" label="Content_standard : String" kind="Persistent" fieldName="_contentStandard" />
+      <Property Id="3f3f342e-8a3c-4ccc-9060-b9baec4bc3ad" name="Goals" label="Goals : String" kind="Persistent" fieldName="_goals" />
+      <Property Id="9c4a20c4-37ce-4960-afbb-8ca6b1f2f128" name="Dok" label="Dok : String" kind="Persistent" fieldName="_dok" />
+      <Property Id="c06e1332-c453-427d-8ee6-15dbbbd63fb8" name="Se_description" label="Se_description : String" kind="Persistent" fieldName="_seDescription" />
+      <Property Id="c9dd7e88-f8fb-4ffa-a012-643e04cb25cd" name="Date_modified" label="Date_modified : String" kind="Persistent" fieldName="_dateModified" />
+      <Property Id="320f6d02-a8f4-4255-ac5f-9c34b2c92c42" name="Date_added" label="Date_added : String" kind="Persistent" fieldName="_dateAdded" />
+      <Property Id="bd7de5ec-dd7c-40d4-b1b2-7d526caa863c" name="Concept" label="Concept : String" kind="Persistent" fieldName="_concept" />
+      <Property Id="a7ffa565-614d-47a8-abf4-4512bf357f41" name="Big_idea" label="Big_idea : String" kind="Persistent" fieldName="_bigIdea" />
+      <Property Id="e041f657-1dae-4df6-bf7a-15ad3501478f" name="Course_meta" label="Course_meta : String" kind="Persistent" fieldName="_courseMeta" />
+      <Property Id="0ac36b07-7817-4944-bde9-36c12879db69" name="Source_meta" label="Source_meta : String" kind="Persistent" fieldName="_sourceMeta" />
+      <Property Id="44efc82f-f38f-47b0-887b-fec6369453fc" name="IsCritical" type="Int16" label="IsCritical : Int16" nullable="true" kind="Persistent" fieldName="_isCritical" />
+    </DomainClass>
+    <DomainClass Id="07599f5b-70a4-4b56-ac34-a914b8e3c9d3" name="LbcExpectationIndex" namespace="acManagement" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="8d2dbaed-a85c-4311-bf06-a69c0eae17c8" name="Source" type="Int32" label="Source : Int32" kind="Persistent" identity="true" fieldName="_source" />
+      <Property Id="a09a6e81-6354-4b25-84d9-2346a2b50298" name="Grade" type="Int32" label="Grade : Int32" kind="Persistent" identity="true" fieldName="_grade" />
+      <Property Id="08367572-5a79-4be5-94d1-2bcf1e74a787" name="Area" type="Int32" label="Area : Int32" kind="Persistent" identity="true" fieldName="_area" />
+      <Property Id="456e9a2c-04a5-43be-9af7-32ada8e2929e" name="Course" type="Int32" label="Course : Int32" kind="Persistent" identity="true" fieldName="_course" />
+      <Property Id="7e78909a-52a1-45b1-9baa-2a922a0de73f" name="Version" type="Int32" label="Version : Int32" kind="Persistent" identity="true" fieldName="_version" />
+      <Property Id="da34f624-f783-445b-845a-862e369f730c" name="Txt_source" label="Txt_source : String" kind="Persistent" fieldName="_txtSource" />
+      <Property Id="85ca9d00-b513-4c6f-8927-d900614a8a70" name="Txt_grade" label="Txt_grade : String" kind="Persistent" fieldName="_txtGrade" />
+      <Property Id="4b7cdf40-e5b0-4c14-a040-6d2bede335ed" name="Txt_area" label="Txt_area : String" kind="Persistent" fieldName="_txtArea" />
+      <Property Id="4893f1d5-6ca4-430f-8d75-45fb4d2b7ce5" name="Txt_course" label="Txt_course : String" kind="Persistent" fieldName="_txtCourse" />
+      <Property Id="15e07d33-3648-4cee-80bc-7804911598f5" name="Count" type="Int32" label="Count : Int32" kind="Persistent" fieldName="_count" />
+      <Property Id="64705b3a-699f-4a47-b38a-0d4ce4971725" name="Type" label="Type : String" kind="Persistent" fieldName="_type" />
+      <Property Id="e889fd5d-f1de-4279-960a-8e3f322575e3" name="Revised" label="Revised : String" kind="Persistent" fieldName="_revised" />
+      <Property Id="e09bd1a8-a722-497d-993a-fc0d5e04c183" name="CodeStart" label="CodeStart : String" kind="Persistent" fieldName="_codeStart" />
+      <Property Id="147d743e-12c2-4e95-a87f-223d5e59e18c" name="CodeEnd" label="CodeEnd : String" kind="Persistent" fieldName="_codeEnd" />
+      <Property Id="2b204c75-e25a-4703-a6a1-320a21fbcce9" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="33ac958f-bdca-43c3-a7b7-c64ee8ea0300" name="Date_added" label="Date_added : String" kind="Persistent" fieldName="_dateAdded" />
+      <Property Id="7fb90212-62e9-4f2d-b02e-dd5b76e1a3ec" name="Date_modified" label="Date_modified : String" kind="Persistent" fieldName="_dateModified" />
+    </DomainClass>
+    <DomainClass Id="9e419154-2546-449a-b48b-66905ac69538" name="LbcDistrict" namespace="acManagement" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="2c67b6d6-8aea-4b5b-b21c-3ed92245efb1" name="DistrictCode" label="DistrictCode : String" kind="Persistent" identity="true" fieldName="_districtCode" />
+      <Property Id="ab194d75-980a-4835-956e-fbdeea669ea1" name="DistrictName" label="DistrictName : String" kind="Persistent" fieldName="_districtName" />
+      <Property Id="3ba58496-c118-44b2-80c4-50ccca6dc35a" name="ConnectionString" label="ConnectionString : String" kind="Persistent" fieldName="_connectionString" />
+      <Property Id="984f61f7-7413-45d8-aa69-e890449282bb" name="IsActive" type="Boolean" label="IsActive : Boolean" nullable="true" kind="Persistent" fieldName="_isActive" />
+      <Property Id="1328b684-8bc8-446d-ab2a-706b01ce41da" name="FtpServer" label="FtpServer : String" kind="Persistent" fieldName="_ftpServer" />
+      <Property Id="95a89c78-3c04-4d06-aec6-ed415b7b4c9d" name="FtpUser" label="FtpUser : String" kind="Persistent" fieldName="_ftpUser" />
+      <Property Id="2dcb8618-523f-42f5-b1af-389c92154552" name="FtpPass" label="FtpPass : String" kind="Persistent" fieldName="_ftpPass" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="1583722d-470b-4e7f-b6fd-e792257dff75">
+      <domainContainer name="acDbContext" namespace="acManagement" showPropertiesCompartment="true">
+        <entitySetProperty name="LbcExpectations" namespace="acManagement" type="LbcExpectation" label="LbcExpectations : IQueryable&lt;acManagement.LbcExpectation&gt;" />
+        <entitySetProperty name="LbcExpectationIndices" namespace="acManagement" type="LbcExpectationIndex" label="LbcExpectationIndices : IQueryable&lt;acManagement.LbcExpectationIndex&gt;" />
+        <entitySetProperty name="LbcDistricts" namespace="acManagement" type="LbcDistrict" label="LbcDistricts : IQueryable&lt;acManagement.LbcDistrict&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

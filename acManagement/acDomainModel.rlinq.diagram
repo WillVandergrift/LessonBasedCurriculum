@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="acDomainModel">
+  <DomainModelMoniker name="/acDbContext" />
+  <nestedChildShapes>
+    <classShape Id="f786d34d-c6c7-4448-aca1-be7f011c69e6" absoluteBounds="0.75, 0.75, 1.5, 5.416499023437499" fillColor="253, 184, 119" outlineColor="213, 71, 0">
+      <DomainClassMoniker name="/acDbContext/LbcExpectation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c53fe3c-6093-4353-82a0-47e6ed2563b0" absoluteBounds="0.76500000000000012, 1.26, 1.4700000000000002, 4.2877197265625" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0bacf44a-f21c-4ced-b752-1e5b95b50ea3" absoluteBounds="0.76500000000000012, 5.5577197265625, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="95305f52-7731-46cb-b220-239254a9d573" absoluteBounds="0.76500000000000012, 5.8171093749999994, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05413a6f-a0a1-461b-b496-43b37f6007cc" absoluteBounds="2.75, 0.75, 1.5, 4.6472932942708312" fillColor="253, 184, 119" outlineColor="213, 71, 0">
+      <DomainClassMoniker name="/acDbContext/LbcExpectationIndex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8621386a-6e34-4184-8b3a-6e4f9bfa857b" absoluteBounds="2.765, 1.2599999999999998, 1.4700000000000002, 3.518513997395833" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="de09cbc2-3e3b-42eb-acf5-fe66ce4db2c5" absoluteBounds="2.765, 4.7885139973958326, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f55346ab-c6e3-4b34-b786-3def245ad5af" absoluteBounds="2.765, 5.0479036458333324, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ebceb86d-2956-4d05-9a07-8fb61cda7888" absoluteBounds="4.75, 0.75, 1.5, 2.724278971354166" fillColor="253, 184, 119" outlineColor="213, 71, 0">
+      <DomainClassMoniker name="/acDbContext/LbcDistrict" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41e8411c-f738-4dd6-8329-45043be11eb6" absoluteBounds="4.765, 1.2599999999999998, 1.4700000000000002, 1.5954996744791667" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="239928c6-558c-473c-b48c-9af1dab110f2" absoluteBounds="4.765, 2.8654996744791665, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5c1802ef-1278-4e36-ad3b-349345e2fca4" absoluteBounds="4.765, 3.1248893229166663, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</entityDiagramsDiagram>

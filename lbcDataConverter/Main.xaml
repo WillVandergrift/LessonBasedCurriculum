@@ -1,0 +1,13 @@
+﻿<Window x:Class="lbcDataConverter.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main" Height="378" Width="299" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid>
+        <telerik:RadButton Content="Load Curriculum" Height="41" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnLoadCurriculum" VerticalAlignment="Top" Width="254" Click="btnLoadCurriculum_Click" />
+        <telerik:RadButton Content="Convert Course Fields" Height="39" HorizontalAlignment="Left" Margin="11,59,0,0" Name="btnConvertCourse" VerticalAlignment="Top" Width="254" Click="btnConvertCourse_Click" />
+        <telerik:RadButton Content="Save Changes" Height="39" HorizontalAlignment="Left" Margin="12,288,0,0" Name="btnSave" VerticalAlignment="Top" Width="254" Click="btnSave_Click" />
+        <telerik:RadButton Content="Convert Lesson Fields" Height="39" HorizontalAlignment="Left" Margin="12,104,0,0" Name="btnConvertLesson" VerticalAlignment="Top" Width="254" Click="btnConvertLesson_Click" />
+        <telerik:RadButton Content="Convert My Workspace" Height="39" HorizontalAlignment="Left" Margin="12,149,0,0" Name="btnConvertMyWorkspace" VerticalAlignment="Top" Width="254" Click="btnConvertMyWorkspace_Click" />
+        <telerik:RadButton Content="Convert HTML Fields" Height="39" HorizontalAlignment="Left" Margin="12,194,0,0" Name="btnConvertHTML" VerticalAlignment="Top" Width="254" Click="btnConvertHTML_Click" />
+    </Grid>
+</Window>
